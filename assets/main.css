@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*
+{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: relative;
+    z-index: 1000000;
+}
+p
+{
+    font-size: 1.15rem;
+}
+.navbar {
+    background: transparent !important;
+    transition: 0.8s;
+}
+
+.navbar.scrolled
+{
+    background: rgb(255, 255, 255) !important;
+    transition: 0.8s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:rgb(161, 35, 159);
+    background: transparent !important;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: rgb(194, 44, 44);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(179, 179, 179, 0.8);
+    background:transparent;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(197, 197, 197);
+    
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgb(197, 197, 197);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/computer.jpg);
+    opacity: 1;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.height100p {
+    height: 100vh;
+}
+.h100 {
+    height: 100%;
+}
+.containerHead{
+    height: 100vh;
+}
+
+.contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.contentBox h1 {
+
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 5rem;
+    background: transparent;
+    opacity: 0.9 !important; 
+    border-radius: 10px;
+
+}
+.contentBox p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    background: rgb(29, 68, 95);
+    opacity: 0.9 !important; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*slider inicio*/
+.contenedor {
+    width: 100%;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+.containerSlider {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.slider {
+    margin: .2rem;
+    /*border: 1px solid green;*/
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.slider img {
+    height: 18rem;
+    width: 25rem;
+    border-radius: 5px;
+    margin: .5rem;
+}
+
+
+/*incicio boxs boxs*/
+.containerBoxs {
+    padding: 0 2rem;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 40px 40px;
+    justify-content: center;
+    align-items: center;;
+}
+.containerBoxs .box {
+    position: relative;
+    height: 400px;
+    background: #bebebe;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+.containerBoxs .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: rgb(206, 63, 63);
+    transform: skew(2deg,2deg);
+    z-index: -1;
+} 
+
+.containerBoxs .box:nth-child(1):before {
+    background: linear-gradient(315deg,#e254c3, #0a7ae9);
+}
+.containerBoxs .box:nth-child(2):before {
+    background: linear-gradient(315deg, #03ffff, #23fc06);
+}
+.containerBoxs .box:nth-child(3):before {
+    background: linear-gradient(315deg,#ec9ac7, #6f1a91);
+}
+.containerBoxs .box:nth-child(4):before {
+    background: linear-gradient(315deg,#1372d1, #002244);
+}
+.containerBoxs .box:nth-child(5):before {
+    background: linear-gradient(315deg,#dd9a1d, #ec4e04);
+}
+.containerBoxs .box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background:rgba(255, 255, 255, 0.116);
+    pointer-events: none ;
+}
+.content {
+    position: relative;
+    padding: 20px;
+
+}
+.box .content h2 {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+  top: -60px;   
+}
+
+.box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+} 
+
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+
+@media screen and (max-width:900px){
+    
+    /*
+    .containerSlider > img { 
+        width: 250px;
+    }
+    .containerSlider > div {
+        width: 40%;
+    }
+    .containerSlider h2 {
+        font-size:23px;
+    }*/
+}
+/*
+@media screen and (max-width:600px){
+    
+    .containerSlider > div {
+        width: 40%;
+    }
+}
+*/
+
+@media (min-width: 992px)
+{
+   .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .4rem;
+        padding-left: .4rem;
+   }
+}
+@media (max-width: 992px) {
+    .navbar-light .navbar-toggler {
+        background: rgb(211, 211, 211);
+        border-radius: 6px;
+        border: transparent;
+        
+    }
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1,
+    .sec2 h2
+     {
+        font-size: 2rem;
+     }
+     .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .4rem;
+        padding-left: .4rem;
+   }
+   .sec1 {
+       padding: 20px 0;
+   }
+   .headerText h2 {
+       font-size: 2rem;
+       margin-bottom: 20px;
+   }
+   .blog {
+       padding: 20px 0;
+   }
+   .blogspot .imgBx {
+       height: 200px;
+   }
+   .btnD1 {
+       padding: 10px 40px;
+       margin-top: 10px;
+   }
+   footer {
+       background: rgb(255, 255, 255);
+       padding: 0px 0 20px;
+   }
+   .sci  li {
+        list-style: none;
+        margin: 0 10px;
+   }
+   .sci li  a {
+       color: rgb(80, 80, 80);
+       font-size: 1.5rem;
+       transition: 0.5s;
+   }
+   .sec2 {
+        height: auto;
+        padding: 40px 0;
+    }
+    .slider {
+        /*border: 1px solid green;*/
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    .slider img {
+        height: 14rem;
+        width: 20rem;
+        border-radius: 5px;
+        margin: .5rem;
+    }
+    .contentBox p {
+        color: #ffffff;
+        font-size: 1rem;
+        background: rgb(29, 68, 95);
+        opacity: 0.9 !important; 
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+}
