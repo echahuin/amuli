@@ -152,7 +152,7 @@ p
 .containerBoxs .box {
     position: relative;
     height: 400px;
-    background: #bebebe;
+    background: #dadada;
     display: flex;
     align-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ p
     left: 0;
     width: 50%;
     height: 100%;
-    background:rgba(255, 255, 255, 0.103);
+    background:rgba(75, 104, 124, 0.103);
     pointer-events: none ;
 }
 .content {
