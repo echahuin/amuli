@@ -21,7 +21,7 @@ window.addEventListener("resize", function () {
 function slides() {
 
     slider.style.transform = "translate(" + (-width * contador) + "px)";
-    /*console.log('this is width', width)*/
+    console.log('this is width', width)
     /*slider.style.transform = `translate(-${width}*${contador}px)`*/
     slider.style.transition = "transform 1s"
     contador++;
@@ -39,6 +39,7 @@ function slides() {
 
     }
 }
+
 if (!sliderActive) {
     console.log('no slider, clickme')
 } else {
@@ -46,12 +47,15 @@ if (!sliderActive) {
         slides()
     }, intervalo);
 }
+if (!(width == widthPC)) {
+    contenedor.addEventListener('onmousedown', function () {
+        sliderActive = false;
+        contenedor.style.overflow = "scroll";
+    })
+} else {
 
+}
 
-contenedor.addEventListener('click', function () {
-    sliderActive = false;
-    contenedor.style.overflow = "scroll";
-})
 
 
 

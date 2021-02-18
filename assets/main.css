@@ -242,16 +242,15 @@ p
     font-size: 1rem;
     font-weight: normal;
     color: rgb(29, 68, 95);
-} 
-
-
-.containerGaleria{
-    margin-top: 10rem;
-    height: 100vh;
-    width: 100%;
 }
-.containerGaleria h1 {
-    margin-top: 2rem;
+.containerScreenGaleria{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    
+}
+.containerScreenGaleria h1 {
+    margin-top: 5rem;
     text-align: center;
     font-weight: 800;
     color: rgb(29, 68, 95);
@@ -261,11 +260,18 @@ p
     opacity: 0.9 !important; 
     border-radius: 10px;
 }
+.containerGaleria{
+    overflow-y: scroll;
+    border: 1px solid rgb(235, 235, 235);
+    margin-top: 1rem;
+    height: 60vh;
+    width: 100%;
+}
 
 .contenidoVinilos {
     padding: 0 15rem;
     display: grid;
-    grid-template-columns: repeat(3,  1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px 10px;
 }
@@ -275,42 +281,18 @@ p
     border-radius: 5px;
 }
 footer .containerFooter {
-    margin-top: 10rem;
+    margin-top: 5rem;
     width: 100%;
-    height: 30rem;
+    height: 10rem;
     background: rgb(29, 68, 95);
 }
-
-
-@media screen and (max-width:900px){
-    
-    /*
-    .containerSlider > img { 
-        width: 250px;
-    }
-    .containerSlider > div {
-        width: 40%;
-    }
-    .containerSlider h2 {
-        font-size:23px;
-    }*/
-}
-/*
-@media screen and (max-width:600px){
-    
-    .containerSlider > div {
-        width: 40%;
-    }
-}
-*/
 
 @media (min-width: 992px)
 {
    .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .4rem;
         padding-left: .4rem;
-   }
- 
+   } 
 }
 @media (max-width: 992px) {
     .navbar-toggler-icon{
@@ -401,7 +383,7 @@ footer .containerFooter {
     .box .content h3 {
         margin: 0 0 10px;
         padding: 0;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: #fff;
     } 
@@ -428,22 +410,24 @@ footer .containerFooter {
     .contenidoVinilos {
         padding: 0 2rem;
         display: grid;
-        grid-template-columns: repeat(2,  1fr);
+        grid-template-columns: repeat(3,  1fr);
         grid-template-rows: auto;
         grid-gap: 10px 10px;
     }
+    .containerScreenGaleria h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerGaleria h1 {
+        margin-top: 1rem;
+    }
     .contenidoVinilos {
         padding: 0 2rem;
-    }
-    .containerGaleria h1 {
-        margin-top: 2rem;
-        text-align: center;
-        font-weight: 800;
-        color: rgb(29, 68, 95);
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        background: transparent;
-        opacity: 0.9 !important; 
-        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px 10px;
     }
 }
