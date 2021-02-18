@@ -63,6 +63,7 @@ p
     top: 0;
     width: 100%;
     height: 100vh;
+    
     background: url(../images/computer.jpg);
     opacity: 1;
     background-size: cover;
@@ -90,7 +91,7 @@ p
 .contentBox h1 {
 
     font-weight: 800;
-    color: rgb(0, 0, 0);
+    color:  rgb(20, 47, 66);
     text-transform: uppercase;
     font-size: 5rem;
     background: transparent;
@@ -243,6 +244,7 @@ p
     color: rgb(29, 68, 95);
 } 
 
+
 .containerGaleria{
     margin-top: 10rem;
     height: 100vh;
@@ -272,6 +274,14 @@ p
     width: 100%;
     border-radius: 5px;
 }
+footer .containerFooter {
+    margin-top: 10rem;
+    width: 100%;
+    height: 30rem;
+    background: rgb(29, 68, 95);
+}
+
+
 @media screen and (max-width:900px){
     
     /*
@@ -300,16 +310,25 @@ p
         padding-right: .4rem;
         padding-left: .4rem;
    }
-   .contenidoVinilos {
-    padding: 0 4rem;
-   }
+ 
 }
 @media (max-width: 992px) {
+    .navbar-toggler-icon{
+        background: transparent;
+    }
     .navbar-light .navbar-toggler {
-        background: rgb(211, 211, 211);
+        background: #ffffff75;
         border-radius: 6px;
         border: transparent;
         
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:visited {
+        color: rgb(197, 197, 197);
+        font-size: 2.5rem;
+        font-weight: 600;
     }
     .banner {
         min-height: 100vh;
