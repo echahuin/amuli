@@ -48,7 +48,7 @@ if (!sliderActive) {
     }, intervalo);
 }
 if (!(width == widthPC)) {
-    contenedor.addEventListener('onmousedown', function () {
+    contenedor.addEventListener('touchstart', function () {
         sliderActive = false;
         contenedor.style.overflow = "scroll";
     })
